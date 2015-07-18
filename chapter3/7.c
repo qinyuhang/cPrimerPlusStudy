@@ -1,5 +1,9 @@
 #include<stdio.h>
 
+int checkString()
+{
+}
+
 int main()
 {
 	float cm, inch;
@@ -16,7 +20,7 @@ int main()
 	scanf("%f",&cm);
 	printf("the inch of your hight is %lf\n",cm/2.54);
 	}else{
-	printf("\aError!");
+	printf("\aError!\n");
 	}
 	return 0;
 }

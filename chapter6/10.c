@@ -3,16 +3,12 @@
 int main()
 {
 	int num[10];
-	int index;
+	int index = 0;
 	printf("enter 8 numbers:");
-	for(index=0;index<10;index++)
+	while(scanf("%d",&num[index]) == 1)
 	{
-		if(scanf("%d",&num[index]) == 1)
-		{
-			
-		}else{
-			break;
-			}
+		index++;
+		if(num[indx]){}
 	}
 	for(;index>0;index--)
 	{

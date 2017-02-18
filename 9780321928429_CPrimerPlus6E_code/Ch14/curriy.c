@@ -10,7 +10,12 @@ main()
     int arr[9] = {0,5,1,2,3,5,3,8,9};
     int * ar = arr;
     int i = 0;
-    sort_arr(gg, ar, 9);
+    sort_arr(max, ar, 9);
+    for (i=0;i<9;i++){
+        printf("%d", *(ar+i));
+    }
+    puts("");
+    sort_arr(min, ar, 9);
     for (i=0;i<9;i++){
         printf("%d", *(ar+i));
     }

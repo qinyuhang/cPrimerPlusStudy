@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int * sort_arr(void (*func)(int * b, int n) ,int * a, int m);
-void gg(int * b, int n);
-
+void max(int * b, int n);
+void min(int * b, int n);
 
 int
 main()
@@ -18,6 +18,7 @@ main()
     return 0;
 }
 
+// sort function
 int *
 sort_arr(void (*func)(int * b, int n) ,int * a, int m)
 {
@@ -25,13 +26,30 @@ sort_arr(void (*func)(int * b, int n) ,int * a, int m)
     return a;
 }
 
+// sort function
 void
-gg(int * b, int n)
+max(int * b, int n)
 {
     int i,j,k;
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
             if ( *(b+i) > *(b+j)){
+                k = *(b+i);
+                *(b+i) = *(b+j);
+                *(b+j) = k;
+            }
+        }
+    }
+}
+
+// sort function
+void
+min(int * b, int n)
+{
+    int i,j,k;
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            if ( *(b+i) < *(b+j)){
                 k = *(b+i);
                 *(b+i) = *(b+j);
                 *(b+j) = k;

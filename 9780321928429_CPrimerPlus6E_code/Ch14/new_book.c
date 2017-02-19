@@ -2,7 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#ifndef S_GETS
 #include "s_gets.h"
+#endif
+
 #define MAXTITL  40
 #define MAXAUTL  40
 #define MAXBKS   10             /* maximum number of books */
